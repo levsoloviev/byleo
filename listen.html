@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Yoga Nidra · byleo.org</title>
+<meta name="description" content="Your 12-minute guided Yoga Nidra by Leo Soloviev." />
+<link rel="preconnect" href="https://player.vimeo.com" />
+<!-- reached from the welcome email; kept out of search results -->
+<meta name="robots" content="noindex" />
+<meta name="theme-color" content="#2A2740" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="apple-touch-icon" href="/icon-180.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Yoga Nidra" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* byleo.org listening page: the Vimeo video, then two ways to keep it — the home screen or the MP3. */
+  :root { --night: #2A2740; --cream: #F2E9D6; --soft: rgba(242, 233, 214, 0.72); --faint: rgba(242, 233, 214, 0.45); --amber: #F2C986; --ink: #1E191E; }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--night); color: var(--cream); font-family: "Nunito", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 520px; margin: 0 auto; padding: calc(14px + env(safe-area-inset-top)) 16px calc(36px + env(safe-area-inset-bottom)); }
+  .brand { font-family: "Kalam", cursive; font-size: 20px; color: var(--soft); text-align: center; margin: 2px 0 6px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); text-align: center; margin: 20px 0 6px; }
+  h1 { font-family: "Kalam", cursive; font-weight: 400; font-size: 40px; line-height: 1.05; text-align: center; margin: 0 0 8px; }
+  .sub { font-size: 16px; line-height: 1.5; color: var(--soft); text-align: center; margin: 0 auto 22px; max-width: 28em; }
+
+  /* the Vimeo video, kept 16:9 at any width */
+  .video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #1E1B2E; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .tips { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 10px; font-size: 15px; line-height: 1.45; color: var(--soft); }
+  .tips li { display: flex; gap: 12px; }
+  .star { flex: none; width: 6px; height: 6px; margin: 8px 6px 0; border-radius: 50%; background: #FFF2CF; box-shadow: 0 0 8px 3px rgba(242, 201, 134, 0.5); }
+
+  .btn { display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px 20px; border-radius: 999px; }
+  .btn-solid { background: var(--cream); color: var(--ink); }
+  .btn-line { border: 1.5px solid rgba(242, 233, 214, 0.35); color: var(--cream); background: transparent; }
+
+  section.keep { margin-top: 30px; border-top: 1px solid rgba(242, 233, 214, 0.12); padding-top: 24px; }
+  h2 { font-family: "Kalam", cursive; font-weight: 400; font-size: 28px; margin: 0 0 4px; text-align: center; }
+  .keep-sub { font-size: 15px; color: var(--soft); text-align: center; margin: 0 0 18px; }
+  .option { background: rgba(242, 233, 214, 0.06); border: 1px solid rgba(242, 233, 214, 0.14); border-radius: 20px; padding: 18px 18px 16px; margin: 0 0 14px; }
+  .opt-head { display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px; }
+  .opt-num { font-family: "Kalam", cursive; font-size: 22px; color: var(--amber); }
+  .opt-title { font-weight: 700; font-size: 18px; margin: 0; }
+  .opt-what { font-size: 14px; color: var(--soft); margin: 0 0 12px; }
+  .os { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin: 10px 0 4px; }
+  .steps { margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.6; color: var(--soft); }
+  .steps b { color: var(--cream); }
+  .or { text-align: center; font-family: "Kalam", cursive; font-size: 20px; color: var(--faint); margin: 2px 0 12px; }
+  .note { font-size: 13px; color: var(--faint); text-align: center; margin: 10px 0 0; }
+  .foot { font-size: 12px; color: var(--faint); text-align: center; margin: 34px 0 0; }
+  .foot a { color: inherit; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="brand">byleo.org</p>
+  <p class="eyebrow">your 12-minute yoga nidra</p>
+  <h1>press play and rest.</h1>
+  <p class="sub">Sit or lie down, put your headphones on if you have them, close your eyes — and just follow my voice.</p>
+
+  <div class="video">
+    <iframe src="https://player.vimeo.com/video/1250094292?title=0&amp;byline=0&amp;portrait=0&amp;dnt=1" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Rest deeply in just 12 minutes" loading="lazy"></iframe>
+  </div>
+
+  <ul class="tips">
+    <li><span class="star"></span><span>Best lying on your back, arms by your sides — or sitting with your back supported.</span></li>
+    <li><span class="star"></span><span>A good moment: mid-afternoon, after work, or in bed before sleep.</span></li>
+    <li><span class="star"></span><span>If your mind wanders, that's fine. Simply come back to my voice.</span></li>
+  </ul>
+
+  <section class="keep">
+    <h2>keep it for next time</h2>
+    <p class="keep-sub">Choose one of two ways:</p>
+
+    <div class="option">
+      <div class="opt-head"><span class="opt-num">1</span><p class="opt-title">Save this page to your home screen</p></div>
+      <p class="opt-what">An icon on your phone that opens this page with the video — like an app, one tap away.</p>
+      <p class="os">iPhone · Safari</p>
+      <ol class="steps">
+        <li>Tap <b>Share</b> (the square with an arrow).</li>
+        <li>Choose <b>Add to Home Screen</b> → <b>Add</b>.</li>
+      </ol>
+      <p class="os">Android · Chrome</p>
+      <ol class="steps">
+        <li>Tap the <b>⋮</b> menu at the top right.</li>
+        <li>Choose <b>Add to Home screen</b> (or <b>Install app</b>).</li>
+      </ol>
+      <p class="note" id="inapp" hidden>Opened from Instagram or your email app? First tap <b>⋯</b> → <b>Open in browser</b>.</p>
+    </div>
+
+    <p class="or">or</p>
+
+    <div class="option">
+      <div class="opt-head"><span class="opt-num">2</span><p class="opt-title">Download the MP3</p></div>
+      <p class="opt-what">The audio as a file on your phone or computer — listen offline, or keep it in your Files or music app.</p>
+      <a class="btn btn-solid" href="yoga-nidra-12min.mp3" download="Yoga Nidra – byleo.org.mp3">download the MP3 · 12 MB</a>
+    </div>
+  </section>
+
+  <p class="foot">byleo.org · <a href="privacy/">Privacy policy</a></p>
+</main>
+<script>
+  // in-app browsers (Instagram, Facebook, Gmail…) can't add to the home screen
+  if (/Instagram|FBAN|FBAV|GSA\//i.test(navigator.userAgent)) document.getElementById("inapp").hidden = false;
+</script>
+</body>
+</html>
