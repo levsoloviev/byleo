@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rest deeply in just 12 minutes — free Yoga Nidra audio · byleo.org</title>
+<meta name="description" content="A guided Yoga Nidra (non-sleep deep rest) by Leo Soloviev, mental coach. Sit or lie down, close your eyes and follow my voice." />
+<meta property="og:title" content="Rest deeply in just 12 minutes — free Yoga Nidra audio" />
+<meta property="og:description" content="A guided Yoga Nidra by Leo Soloviev. Sit or lie down, close your eyes and follow my voice." />
+<meta property="og:image" content="https://byleo.org/yoga-nidra/assets/share.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* byleo.org opt-in page — minimalist night: one deep sky colour, a few stars in the picture, a lowercase
+     hand-written line, cream text, a single pill button. Mobile first (traffic comes from Instagram). */
+  :root {
+    --night: #2A2740;
+    --cream: #F2E9D6;
+    --cream-soft: rgba(242, 233, 214, 0.72);
+    --cream-faint: rgba(242, 233, 214, 0.45);
+    --amber: #F2C986;
+    --ink: #1E191E;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body { margin: 0; background: var(--night); color: var(--cream); font-family: "Nunito", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  .hand { font-family: "Kalam", cursive; }
+  .wrap { max-width: 520px; margin: 0 auto; padding: 14px 16px 36px; }
+  .brand { font-family: "Kalam", cursive; font-size: 20px; letter-spacing: 0.02em; color: var(--cream-soft); text-align: center; margin: 2px 0 0; }
+  .hero { display: block; width: 100%; height: auto; margin: 0 auto -6px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); text-align: center; margin: 0 0 6px; }
+  h1 { font-family: "Kalam", cursive; font-weight: 400; font-size: 42px; line-height: 1.05; text-align: center; margin: 0 0 10px; }
+  .sub { font-size: 16px; line-height: 1.5; color: var(--cream-soft); text-align: center; margin: 0 auto 18px; max-width: 28em; }
+  form { display: grid; gap: 10px; margin: 0 0 8px; }
+  input[type="email"] {
+    width: 100%; font: inherit; font-size: 17px; padding: 15px 20px; border-radius: 999px;
+    border: 1.5px solid rgba(242, 233, 214, 0.3); background: rgba(242, 233, 214, 0.06); color: var(--cream);
+  }
+  input[type="email"]::placeholder { color: var(--cream-faint); }
+  button {
+    font: inherit; font-weight: 700; font-size: 17px; padding: 15px 20px; border-radius: 999px; cursor: pointer;
+    border: 0; background: var(--cream); color: var(--ink);
+  }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+  .err { margin: 2px 0 0; font-size: 14px; color: #F4B6A0; text-align: center; }
+  button[disabled] { opacity: 0.7; cursor: default; }
+  .done { text-align: center; padding: 18px 8px 34px; }
+  .done-title { font-family: "Kalam", cursive; font-size: 30px; margin: 0 0 8px; }
+  .done-text { font-size: 16px; line-height: 1.5; color: var(--cream-soft); margin: 0 auto; max-width: 26em; }
+  .micro { font-size: 13px; color: var(--cream-faint); text-align: center; margin: 0 0 34px; }
+  .list { list-style: none; padding: 0; margin: 0 0 34px; display: grid; gap: 14px; }
+  .list li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 16px; line-height: 1.45; color: var(--cream-soft); }
+  .list b { color: var(--cream); font-weight: 700; }
+  .star { width: 6px; height: 6px; margin: 8px auto 0; border-radius: 50%; background: #FFF2CF; box-shadow: 0 0 8px 3px rgba(242, 201, 134, 0.5); }
+  /* the bio is a small reference note at the bottom: photo beside the name, compact left-aligned text */
+  .leo { border-top: 1px solid rgba(242, 233, 214, 0.12); padding-top: 22px; }
+  .who { display: flex; align-items: center; gap: 14px; margin: 0 0 12px; }
+  .photo { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(242, 233, 214, 0.5); flex: none; }
+  .leo h2 { font-family: "Kalam", cursive; font-weight: 400; font-size: 22px; line-height: 1.1; margin: 0; }
+  .leo .role { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin: 3px 0 0; }
+  .leo p { font-size: 13.5px; line-height: 1.55; color: rgba(242, 233, 214, 0.6); margin: 0 0 8px; text-align: left; }
+  .leo p:last-child { margin-bottom: 0; }
+  /* a second button at the end, for people who scroll down first */
+  .again { margin-top: 30px; text-align: center; }
+  .again-line { font-family: "Kalam", cursive; font-size: 20px; margin: 0 0 12px; }
+  .btn { display: block; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px 20px; border-radius: 999px; background: var(--cream); color: var(--ink); }
+  .foot { font-size: 12px; color: var(--cream-faint); text-align: center; margin: 36px 0 0; }
+  .foot a { color: inherit; }
+  @media (min-width: 900px) {
+    .wrap { max-width: 1080px; padding-top: 28px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; align-items: center; }
+    .brand { grid-column: 1 / -1; text-align: left; }
+    .hero-col { grid-column: 2; grid-row: 2; }
+    .main { grid-column: 1; grid-row: 2; }
+    .eyebrow, h1, .sub, .micro { text-align: left; }
+    h1 { font-size: 60px; }
+    .more { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; margin-top: 30px; }
+    .leo { border-top: 0; padding-top: 0; }
+    .again { grid-column: 1 / -1; max-width: 420px; margin: 40px auto 0; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="brand">byleo.org</p>
+    <div class="hero-col"><img class="hero" src="assets/hero.jpg" width="1200" height="900" alt="A person in a hood resting in bed with a cup of tea, rain and moonlight at the window, a ginger cat on the blanket" /></div>
+    <section class="main">
+      <p class="eyebrow">free 12-minute yoga nidra audio</p>
+      <h1>rest deeply in just 12 minutes.</h1>
+      <p class="sub">For the days your mind won't switch off. Sit or lie down, close your eyes — and let my voice do the rest.</p>
+      <form id="get" novalidate>
+        <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="your email" aria-label="Your email" required />
+        <!-- honeypot: real people never see or fill this field -->
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp" />
+        <button type="submit">send me the free audio</button>
+        <p class="err" role="alert" hidden></p>
+      </form>
+      <div class="done" hidden>
+        <p class="done-title">it's on its way.</p>
+        <p class="done-text">Check your inbox in a minute — the email from Leo has your Yoga Nidra audio. If you can't see it, look in Promotions or Spam.</p>
+      </div>
+      <p class="micro">Opens instantly. No spam — unsubscribe anytime.</p>
+    </section>
+    <div class="more">
+      <ul class="list">
+        <li><span class="star"></span><span><b>Recharge mid-day</b> — when coffee no longer helps</span></li>
+        <li><span class="star"></span><span><b>Switch off a racing mind</b> — after work or before sleep</span></li>
+        <li><span class="star"></span><span><b>Come back calmer and clearer</b> — rested, not groggy</span></li>
+        <li><span class="star"></span><span><b>Nothing to learn</b> — no experience, no poses. Press play and listen.</span></li>
+      </ul>
+      <div class="leo">
+        <div class="who">
+          <img class="photo" src="assets/leo.jpg" width="56" height="56" alt="Leo Soloviev" />
+          <div>
+            <h2>hi, I'm Leo Soloviev.</h2>
+            <div class="role">mental coach</div>
+          </div>
+        </div>
+        <p>I teach practical tools for everyday mental challenges, explained through animation.</p>
+        <p>I started out as a lawyer (University of London, NYU). In 2013 I switched to working with the mind: I trained with teachers in the UK and the US, and spent months at a time in India — from the south to the Himalayas — learning from traditional teachers.</p>
+        <p>Since then I've done many 7–10-day silent meditation retreats, and about a month on my own in the Himalayas. I've been teaching since 2018.</p>
+      </div>
+      <div class="again">
+        <p class="again-line">12 minutes. Eyes closed. Nothing to do.</p>
+        <a class="btn" href="#get" id="again">send me the free audio</a>
+      </div>
+    </div>
+  </main>
+  <p class="foot">byleo.org · <a href="/privacy/">Privacy policy</a></p>
+<script>
+  // Sends the email to our own function (/api/subscribe), which adds the contact in systeme.io with the
+  // yoga-nidra tag; a systeme.io automation then sends the audio. The API key never reaches the browser.
+  (() => {
+    const form = document.getElementById("get");
+    const input = form.querySelector('input[name="email"]');
+    const button = form.querySelector("button");
+    const err = form.querySelector(".err");
+    const done = document.querySelector(".done");
+    const showError = (msg) => { err.textContent = msg; err.hidden = false; };
+    document.getElementById("again").addEventListener("click", (e) => {
+      e.preventDefault();
+      form.scrollIntoView({ behavior: "smooth", block: "center" });
+      setTimeout(() => input.focus({ preventScroll: true }), 400);
+    });
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.hidden = true;
+      const email = input.value.trim();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return showError("Please enter a valid email address.");
+      button.disabled = true;
+      button.textContent = "sending…";
+      try {
+        const res = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, website: form.website.value }),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        done.hidden = false;
+        document.querySelector(".micro").hidden = true;
+        const again = document.getElementById("again");
+        again.textContent = "check your inbox ✓";
+        again.style.pointerEvents = "none";
+      } catch {
+        button.disabled = false;
+        button.textContent = "send me the free audio";
+        showError("Something went wrong — please try again in a moment.");
+      }
+    });
+  })();
+</script>
+</body>
+</html>
