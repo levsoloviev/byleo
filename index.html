@@ -132,7 +132,7 @@
   // Sends the email to the byleo signup worker (Cloudflare, see _signup-worker/), which adds the contact in
   // systeme.io with the yoga-nidra tag; a systeme.io automation then sends the audio.
   // The systeme.io API key lives only in the worker's settings and never reaches the browser.
-  const SIGNUP_URL = "https://byleo-signup.REPLACE-ME.workers.dev"; // ← the worker's address after it's deployed
+  const SIGNUP_URL = "https://byleo-signup.leo-daf.workers.dev"; // ← the worker's address after it's deployed
   (() => {
     const form = document.getElementById("get");
     const input = form.querySelector('input[name="email"]');
