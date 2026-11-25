@@ -1,0 +1,5 @@
+# Optional: deploy from the terminal with `npx wrangler deploy` (from this folder).
+# The secret is set separately: `npx wrangler secret put SYSTEME_API_KEY`.
+name = "byleo-signup"
+main = "worker.js"
+compatibility_date = "2024-11-01"

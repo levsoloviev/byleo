@@ -7,7 +7,7 @@
 <meta name="description" content="A guided Yoga Nidra (non-sleep deep rest) by Leo Soloviev, mental coach. Sit or lie down, close your eyes and follow my voice." />
 <meta property="og:title" content="Rest deeply in just 12 minutes — free Yoga Nidra audio" />
 <meta property="og:description" content="A guided Yoga Nidra by Leo Soloviev. Sit or lie down, close your eyes and follow my voice." />
-<meta property="og:image" content="https://byleo.org/yoga-nidra/assets/share.jpg" />
+<meta property="og:image" content="https://byleo.org/assets/share.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -127,10 +127,12 @@
       </div>
     </div>
   </main>
-  <p class="foot">byleo.org · <a href="/privacy/">Privacy policy</a></p>
+  <p class="foot">byleo.org · <a href="privacy/">Privacy policy</a></p>
 <script>
-  // Sends the email to our own function (/api/subscribe), which adds the contact in systeme.io with the
-  // yoga-nidra tag; a systeme.io automation then sends the audio. The API key never reaches the browser.
+  // Sends the email to the byleo signup worker (Cloudflare, see _signup-worker/), which adds the contact in
+  // systeme.io with the yoga-nidra tag; a systeme.io automation then sends the audio.
+  // The systeme.io API key lives only in the worker's settings and never reaches the browser.
+  const SIGNUP_URL = "https://byleo-signup.REPLACE-ME.workers.dev"; // ← the worker's address after it's deployed
   (() => {
     const form = document.getElementById("get");
     const input = form.querySelector('input[name="email"]');
@@ -151,7 +153,7 @@
       button.disabled = true;
       button.textContent = "sending…";
       try {
-        const res = await fetch("/api/subscribe", {
+        const res = await fetch(SIGNUP_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email, website: form.website.value }),
