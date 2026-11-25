@@ -1,0 +1,14 @@
+{
+  "name": "Yoga Nidra · byleo.org",
+  "short_name": "Yoga Nidra",
+  "description": "A 12-minute guided Yoga Nidra by Leo Soloviev.",
+  "start_url": "/yoga-nidra/",
+  "scope": "/yoga-nidra/",
+  "display": "standalone",
+  "background_color": "#2A2740",
+  "theme_color": "#2A2740",
+  "icons": [
+    { "src": "/yoga-nidra/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/yoga-nidra/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
