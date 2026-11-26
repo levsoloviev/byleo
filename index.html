@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rest deeply in just 12 minutes — free Yoga Nidra audio · byleo.org</title>
-<meta name="description" content="A guided Yoga Nidra (non-sleep deep rest) by Leo Soloviev, mental performance & mindfulness coach. Sit or lie down, close your eyes and follow my voice." />
+<meta name="description" content="A guided Yoga Nidra (non-sleep deep rest) by Leo Soloviev, mental performance coach. Sit or lie down, close your eyes and follow my voice." />
 <meta property="og:title" content="Rest deeply in just 12 minutes — free Yoga Nidra audio" />
 <meta property="og:description" content="A guided Yoga Nidra by Leo Soloviev. Sit or lie down, close your eyes and follow my voice." />
 <meta property="og:image" content="https://byleo.org/assets/share.jpg" />
@@ -29,9 +29,22 @@
   .hand { font-family: "Kalam", cursive; }
   .wrap { max-width: 520px; margin: 0 auto; padding: 14px 16px 36px; }
   .brand { font-family: "Kalam", cursive; font-size: 20px; letter-spacing: 0.02em; color: var(--cream-soft); text-align: center; margin: 2px 0 0; }
-  .hero { display: block; width: 100%; height: auto; margin: 0 auto -6px; }
-  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); text-align: center; margin: 0 0 6px; }
-  h1 { font-family: "Kalam", cursive; font-weight: 400; font-size: 42px; line-height: 1.05; text-align: center; margin: 0 0 10px; }
+  .hero { display: block; width: 100%; height: auto; margin: 0 auto; }
+  /* the round photo with a cream ring (top and bottom bio) */
+  .ring { position: relative; flex: none; border-radius: 50%; padding: 1.5px; background: var(--cream); box-shadow: 0 0 0 3px rgba(242, 233, 214, 0.07), 0 6px 18px rgba(0, 0, 0, 0.28); }
+  .ring img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  /* top blocks: hello · the audio · the form — clearly separated */
+  .block { margin: 0 0 30px; text-align: center; }
+  .block + .block { padding-top: 26px; border-top: 1px solid rgba(242, 233, 214, 0.1); }
+  .hello .ring { width: 100px; height: 100px; margin: 18px auto 12px; }
+  .hi { font-family: "Kalam", cursive; font-size: 32px; line-height: 1.05; margin: 0 0 4px; }
+  .role-top { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin: 0 0 10px; }
+  .what { font-size: 16px; line-height: 1.5; color: var(--cream-soft); margin: 0 auto; max-width: 24em; }
+  .what b, .about-audio b { color: var(--cream); font-weight: 700; }
+  .about-audio { font-size: 16px; line-height: 1.55; color: var(--cream-soft); margin: 0 auto; max-width: 26em; }
+  .about-audio + .about-audio { margin-top: 10px; }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); text-align: center; margin: 0 0 8px; }
+  h1 { font-family: "Kalam", cursive; font-weight: 400; font-size: 38px; line-height: 1.05; text-align: center; margin: 0 0 14px; }
   .sub { font-size: 16px; line-height: 1.5; color: var(--cream-soft); text-align: center; margin: 0 auto 18px; max-width: 28em; }
   form { display: grid; gap: 10px; margin: 0 0 8px; }
   input[type="email"] {
@@ -51,31 +64,59 @@
   .done .listen { margin: 18px auto 0; max-width: 360px; }
   .done-text { font-size: 16px; line-height: 1.5; color: var(--cream-soft); margin: 0 auto; max-width: 26em; }
   .micro { font-size: 13px; color: var(--cream-faint); text-align: center; margin: 0 0 34px; }
+  .micro a { color: inherit; }
+  .why-title { font-family: "Kalam", cursive; font-weight: 400; font-size: 28px; line-height: 1.1; text-align: center; margin: 0 0 16px; }
   .list { list-style: none; padding: 0; margin: 0 0 34px; display: grid; gap: 14px; }
   .list li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 16px; line-height: 1.45; color: var(--cream-soft); }
   .list b { color: var(--cream); font-weight: 700; }
   .star { width: 6px; height: 6px; margin: 8px auto 0; border-radius: 50%; background: #FFF2CF; box-shadow: 0 0 8px 3px rgba(242, 201, 134, 0.5); }
   /* the bio is a small reference note at the bottom: photo beside the name, compact left-aligned text */
   .leo { border-top: 1px solid rgba(242, 233, 214, 0.12); padding-top: 22px; }
-  .who { display: flex; align-items: center; gap: 14px; margin: 0 0 12px; }
+  .who { display: flex; align-items: center; gap: 14px; margin: 0 0 14px; }
+  .who .ring { width: 64px; height: 64px; }
   .photo { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1.5px solid rgba(242, 233, 214, 0.5); flex: none; }
-  .leo h2 { font-family: "Kalam", cursive; font-weight: 400; font-size: 22px; line-height: 1.1; margin: 0; }
-  .leo .role { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin: 3px 0 0; }
+  .leo h2 { font-family: "Kalam", cursive; font-weight: 400; font-size: 24px; line-height: 1.1; margin: 0; }
+  .leo .role { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--amber); margin: 4px 0 0; }
   .leo p { font-size: 13.5px; line-height: 1.55; color: rgba(242, 233, 214, 0.6); margin: 0 0 8px; text-align: left; }
   .leo p:last-child { margin-bottom: 0; }
   /* a second button at the end, for people who scroll down first */
   .again { margin-top: 30px; text-align: center; }
   .again-line { font-family: "Kalam", cursive; font-size: 20px; margin: 0 0 12px; }
   .btn { display: block; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px 20px; border-radius: 999px; background: var(--cream); color: var(--ink); }
-  .foot { font-size: 12px; color: var(--cream-faint); text-align: center; margin: 36px 0 0; }
+  .foot { font-size: 13px; color: var(--cream-faint); text-align: center; margin: 36px 0 0; padding: 8px 16px calc(40px + env(safe-area-inset-bottom)); }
   .foot a { color: inherit; }
+  /* what happens in the 12 minutes: six stages, each with a still from the film */
+  .inside { margin: 6px 0 34px; }
+  .inside h2 { font-family: "Kalam", cursive; font-weight: 400; font-size: 28px; line-height: 1.1; text-align: center; margin: 0 0 6px; }
+  .inside .intro { font-size: 15px; line-height: 1.5; color: var(--cream-soft); text-align: center; margin: 0 auto 20px; max-width: 30em; }
+  .steps { display: grid; grid-template-columns: 1fr 1fr; column-gap: 14px; row-gap: 22px; }
+  .step img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px; }
+  .step-head { display: grid; grid-template-columns: auto 1fr; align-items: baseline; column-gap: 8px; margin: 8px 0 4px; }
+  .step-num { font-family: "Kalam", cursive; font-size: 22px; color: var(--amber); }
+  .step-title { font-weight: 700; font-size: 15px; line-height: 1.2; margin: 0; }
+  .step-time { grid-column: 1 / -1; order: -1; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; color: var(--cream-faint); margin-bottom: 2px; }
+  .step p { font-size: 13.5px; line-height: 1.45; color: var(--cream-soft); margin: 0; }
+  .step p b { color: var(--cream); font-weight: 700; }
+  .inside .cta { display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 17px; padding: 15px 20px; border-radius: 999px; background: var(--cream); color: var(--ink); margin: 26px auto 0; max-width: 420px; }
   @media (min-width: 900px) {
-    .wrap { max-width: 1080px; padding-top: 28px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; align-items: center; }
-    .brand { grid-column: 1 / -1; text-align: left; }
-    .hero-col { grid-column: 2; grid-row: 2; }
-    .main { grid-column: 1; grid-row: 2; }
-    .eyebrow, h1, .sub, .micro { text-align: left; }
-    h1 { font-size: 60px; }
+    /* desktop: hero centred on top → audio intro (left) beside photo + hello (right) → the form centred → the rest */
+    .wrap { max-width: 1080px; padding-top: 28px; }
+    .hero-col { max-width: 640px; margin: 4px auto 0; }
+    .main { display: grid; grid-template-columns: 1fr 1fr; column-gap: 0; align-items: center; margin-top: 18px; }
+    .main .block { margin: 0; padding: 8px 48px 10px; }
+    .main .block + .block { border-top: 0; }
+    .main .hello { grid-column: 2; grid-row: 1; }
+    .main .hello .ring { margin-top: 0; }
+    .main .hello + .block { grid-column: 1; grid-row: 1; border-right: 1px solid rgba(242, 233, 214, 0.1); }
+    .main .form-block { grid-column: 1 / -1; width: 100%; max-width: 760px; justify-self: center; margin-top: 40px; padding: 38px 0 0; border-top: 1px solid rgba(242, 233, 214, 0.1); }
+    .main .form-block form { max-width: 460px; margin-left: auto; margin-right: auto; }
+    .main .form-block .micro { max-width: 460px; margin-left: auto; margin-right: auto; }
+    h1 { font-size: 56px; }
+    .main .what, .main .about-audio { font-size: 17px; }
+    .inside { grid-column: 1 / -1; margin-top: 40px; }
+    .steps { grid-template-columns: repeat(3, 1fr); column-gap: 28px; row-gap: 30px; }
+    .step p { font-size: 15px; }
+    .step-title { font-size: 17px; }
     .more { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 56px; margin-top: 30px; }
     .leo { border-top: 0; padding-top: 0; }
     .again { grid-column: 1 / -1; max-width: 420px; margin: 40px auto 0; }
@@ -87,9 +128,21 @@
     <p class="brand">byleo.org</p>
     <div class="hero-col"><img class="hero" src="assets/hero.jpg" width="1200" height="900" alt="A person in a hood resting in bed with a cup of tea, rain and moonlight at the window, a ginger cat on the blanket" /></div>
     <section class="main">
-      <p class="eyebrow">free 12-minute yoga nidra audio</p>
+      <div class="block hello">
+        <div class="ring"><img src="assets/leo.jpg" width="168" height="168" alt="Leo Soloviev" /></div>
+        <p class="hi">hi, I'm Leo.</p>
+        <p class="role-top">mental performance coach</p>
+        <p class="what">Since 2017 I've been helping people improve their lives with <b>proven mental techniques</b> for calm, focus and rest — explained simply, and often through animation, which makes them unusually easy to grasp.</p>
+      </div>
+
+      <div class="block">
+        <p class="eyebrow">your free 12-minute audio</p>
+        <p class="about-audio">It's a <b>Yoga Nidra</b> — also called <b>yogic sleep</b>, or <b>NSDR</b> (non-sleep deep rest).</p>
+        <p class="about-audio">Rooted in an ancient tradition, it's now <b>backed by a growing body of university research</b> and increasingly recommended by neuroscientists for rest, stress relief and focus. I've practised it myself since 2013 — it's one of the most effective tools I know.</p>
+      </div>
+
+      <div class="block form-block">
       <h1>rest deeply in just 12 minutes.</h1>
-      <p class="sub">For the days your mind won't switch off. Sit or lie down, close your eyes — and let my voice do the rest.</p>
       <form id="get" novalidate>
         <input type="email" name="email" autocomplete="email" inputmode="email" placeholder="your email" aria-label="Your email" required />
         <!-- honeypot: real people never see or fill this field -->
@@ -102,26 +155,68 @@
         <p class="done-text">Your Yoga Nidra is waiting for you. I've also emailed you the link, so you can come back to it any time.</p>
         <a class="btn listen" href="listen">listen now</a>
       </div>
-      <p class="micro">Opens instantly. No spam — unsubscribe anytime.</p>
+      <p class="micro">Opens instantly. Now and then I may also send you short, practical tips for calm, focus and better rest — unsubscribe anytime. <a href="privacy/">Privacy policy</a></p>
+      </div>
+    </section>
+    <section class="inside">
+      <h2>what happens in 12 minutes</h2>
+      <p class="intro">Sit or lie down, and just listen. My voice guides you through six gentle stages:</p>
+      <div class="steps">
+      <div class="step">
+        <img src="assets/step1-settle.jpg" width="960" height="540" loading="lazy" alt="A person lying in bed under a blanket at night, rain at the window, a ginger cat at their feet" />
+        <div class="step-head"><span class="step-num">1</span><p class="step-title">settle in</p><span class="step-time">0:55</span></div>
+        <p>Your body softens and settles.</p>
+      </div>
+      <div class="step">
+        <img src="assets/step2-body.jpg" width="960" height="540" loading="lazy" alt="Soft glowing points along the resting body" />
+        <div class="step-head"><span class="step-num">2</span><p class="step-title">feel your whole body</p><span class="step-time">1:50</span></div>
+        <p>Attention moves from thoughts to the body.</p>
+      </div>
+      <div class="step">
+        <img src="assets/step3-breath.jpg" width="960" height="540" loading="lazy" alt="A glowing ring on the belly rising and falling with the breath" />
+        <div class="step-head"><span class="step-num">3</span><p class="step-title">follow the breath</p><span class="step-time">2:35</span></div>
+        <p>Your breath slows down on its own.</p>
+      </div>
+      <div class="step">
+        <img src="assets/step4-rotation.jpg" width="960" height="540" loading="lazy" alt="Seen from above: glowing points joined by a thin line along the right side of the body" />
+        <div class="step-head"><span class="step-num">4</span><p class="step-title">a journey around the body</p><span class="step-time">3:45</span></div>
+        <p>Attention moves point by point. The mind goes quiet.</p>
+      </div>
+      <div class="step">
+        <img src="assets/step5-rest.jpg" width="960" height="540" loading="lazy" alt="Seen from above: the person resting completely still" />
+        <div class="step-head"><span class="step-num">5</span><p class="step-title">deep rest</p><span class="step-time">9:45</span></div>
+        <p>The heart of it: awake, yet deeply resting.</p>
+      </div>
+      <div class="step">
+        <img src="assets/step6-back.jpg" width="960" height="540" loading="lazy" alt="The person sitting up in bed with a cup of tea, the cat coming over" />
+        <div class="step-head"><span class="step-num">6</span><p class="step-title">come back refreshed</p><span class="step-time">10:45</span></div>
+        <p>You get up refreshed, as if rebooted.</p>
+      </div>
+      </div>
+      <a class="cta" href="#get" id="again-mid">send me the free audio</a>
     </section>
     <div class="more">
+      <div class="why">
+      <h3 class="why-title">why it's worth 12 minutes</h3>
       <ul class="list">
-        <li><span class="star"></span><span><b>Recharge mid-day</b> — when coffee no longer helps</span></li>
-        <li><span class="star"></span><span><b>Switch off a racing mind</b> — after work or before sleep</span></li>
-        <li><span class="star"></span><span><b>Come back calmer and clearer</b> — rested, not groggy</span></li>
-        <li><span class="star"></span><span><b>Nothing to learn</b> — no experience, no poses. Press play and listen.</span></li>
+        <li><span class="star"></span><span><b>A powerful nap in 12 minutes</b> — not groggy afterwards, but recharged, as if plugged into a battery.</span></li>
+        <li><span class="star"></span><span><b>Calm a racing mind</b> — when stress or overthinking won't switch off.</span></li>
+        <li><span class="star"></span><span><b>Any time you need it</b> — sitting or lying down, whenever your energy or focus dips during the day.</span></li>
+        <li><span class="star"></span><span><b>Wind down for sleep</b> — in bed, to let the day go.</span></li>
       </ul>
+      </div>
       <div class="leo">
         <div class="who">
-          <img class="photo" src="assets/leo.jpg" width="56" height="56" alt="Leo Soloviev" />
+          <div class="ring"><img src="assets/leo.jpg" width="168" height="168" alt="Leo Soloviev" loading="lazy" /></div>
           <div>
-            <h2>hi, I'm Leo Soloviev.</h2>
-            <div class="role">mental performance &amp; mindfulness coach</div>
+            <h2>Leo Soloviev</h2>
+            <div class="role">mental performance coach</div>
           </div>
         </div>
-        <p>I teach practical tools for everyday mental challenges, explained through animation.</p>
-        <p>I started out as a lawyer (University of London, NYU). In 2013 I switched to working with the mind: I trained with teachers in the UK and the US, and spent months at a time in India — from the south to the Himalayas — learning from traditional teachers.</p>
-        <p>Since then I've done many 7–10-day silent meditation retreats, and about a month on my own in the Himalayas. I've been coaching since 2017.</p>
+        <p>I help people improve their lives through proven mental techniques for calm, focus and rest — explained simply, and often through animation, which makes them unusually easy to grasp.</p>
+        <p>My background brings together two worlds that rarely meet. I started out as a lawyer, with a Master's in International Business Law from the University of London and a Master's in Corporate Law from NYU School of Law.</p>
+        <p>In 2013 I turned to the mind itself. I trained with teachers in the UK and the US, and spent months at a time in India learning mind techniques — including meditation and Yoga Nidra — from some of the best traditional teachers there.</p>
+        <p>Many 7–10-day silent retreats, and a month-long solitude retreat alone in the Himalayas, let me study how the mind works from the inside. I've been coaching since 2017.</p>
       </div>
       <div class="again">
         <p class="again-line">12 minutes. Eyes closed. Nothing to do.</p>
@@ -142,6 +237,11 @@
     const err = form.querySelector(".err");
     const done = document.querySelector(".done");
     const showError = (msg) => { err.textContent = msg; err.hidden = false; };
+    document.getElementById("again-mid").addEventListener("click", (e) => {
+      e.preventDefault();
+      form.scrollIntoView({ behavior: "smooth", block: "center" });
+      setTimeout(() => input.focus({ preventScroll: true }), 400);
+    });
     document.getElementById("again").addEventListener("click", (e) => {
       e.preventDefault();
       form.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -164,6 +264,7 @@
         form.hidden = true;
         done.hidden = false;
         document.querySelector(".micro").hidden = true;
+        document.getElementById("again-mid").hidden = true;
         const again = document.getElementById("again");
         again.textContent = "check your inbox ✓";
         again.style.pointerEvents = "none";
